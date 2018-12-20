@@ -15,7 +15,6 @@
 	align-items: center;
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
-
 }
 
 .App-link {
@@ -49,16 +48,15 @@
 .float-right {
 	float: right;
 	width: 35%;
-  padding-right: 150px;
-  background-color: transparent;
+	padding-right: 150px;
+	background-color: transparent;
 }
 
 .float-left {
 	float: left;
 	width: 35%;
-  padding-left: 150px;
-  background-color: transparent;
-  
+	padding-left: 150px;
+	background-color: transparent;
 }
 
 .exerciseDetails {
@@ -69,16 +67,14 @@
 }
 
 .detailsTitle {
-  text-align: center;
-
+	text-align: center;
 }
 
 .detailsBorder {
 	border: 2px solid black;
 	border-radius: 15px;
 	width: auto;
-  height: auto;
-  
+	height: auto;
 }
 
 .button {
@@ -88,8 +84,8 @@
 	width: 160px;
 	height: 50px;
 	border-radius: 15px;
-  border: 1px solid white;
-  font-weight: bold;
+	border: 1px solid white;
+	font-weight: bold;
 }
 
 .marginLeftAndRight {
@@ -107,437 +103,387 @@
 }
 
 .topPadding {
-  padding-top: 100px;
+	padding-top: 100px;
 }
-
-
 
 .flex-end {
-  display: flex;
-  align-content: flex-end;
+	display: flex;
+	align-content: flex-end;
 }
-
 
 .exercisePage {
-  background-image: url('https://previews.123rf.com/images/leremy/leremy1304/leremy130400081/18797526-man-people-athletic-gym-gymnasium-body-building-exercise-healthy-training-workout-sign-symbol-pictog.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
- 
-  
+	background-image: url('https://previews.123rf.com/images/leremy/leremy1304/leremy130400081/18797526-man-people-athletic-gym-gymnasium-body-building-exercise-healthy-training-workout-sign-symbol-pictog.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.columns{
-  background-color: white;
-  border-radius: 15px;
-  border: 2px solid black;
-  width: 35%;
+.columns {
+	background-color: white;
+	border-radius: 15px;
+	border: 2px solid black;
+	width: 35%;
 }
 .transparentBG {
-  background-color: transparent;
+	background-color: transparent;
 }
 
-/* .lower-body-column {
-  background-image: url('http://i.bnet.com/blogs/leg-muscle.png');
-  background-color: gold;
-  
+.calendar {
+	display: flex;
+  flex-direction: row;
+  height: auto;
+}
+.exercise {
+  border: 1px solid blue;
+  padding: 15px;
 }
 
-.lower-body-column h3 {
-  border-radius: 15px;
-  border: 1px solid black;
-  background-color:rgba(255, 217, 0, 0.5);
- 
-} */
-
+.day {
+  justify-content: space-between;
+  border: 1px solid red;
+}
 
 
 .nav-logo {
-  width: 165px;
-  height: 60px;
+	width: 165px;
+	height: 60px;
 }
 
 .landing-page {
-  border-radius: 15px;
-  border: 2px solid black;
-  width: 50vw;
-  background-color: gold;
-  /* display: flex;
+	border-radius: 15px;
+	border: 2px solid black;
+	width: 50vw;
+	background-color: gold;
+	/* display: flex;
   justify-content: center;
   align-items: center; */
 }
 
-.bigMarginLeft{
-  margin-left: 350px
+.bigMarginLeft {
+	margin-left: 350px;
 }
 
 .bigLogo {
-  text-decoration: none;
-
+	text-decoration: none;
 }
 
 .bigLogo hover {
-  -webkit-animation: shake 1s;
-  animation: shake 1s;
+	-webkit-animation: shake 1s;
+	animation: shake 1s;
 }
-
 
 .organize-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  background-color: black;
-  padding: 75px 0px;
-
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	background-color: black;
+	padding: 75px 0px;
 }
-/* .organize-section img {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 
 .bg-img-test {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBYlt3AJ64kDIuedA9htY8b6qqphVfKgNuniRegcDHK9ftKNx');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBYlt3AJ64kDIuedA9htY8b6qqphVfKgNuniRegcDHK9ftKNx');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-
 .image-resize {
-height: 170px;
-width: 170px;
-border-radius: 2%;
-border: 1px solid black;
+	height: 170px;
+	width: 170px;
+	border-radius: 2%;
+	border: 1px solid black;
 }
 
 .twoExercises {
-  display: flex;
-  justify-content: space-around;
-  
-
+	display: flex;
+	justify-content: space-around;
 }
 .bg {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzrV8rAfL86_O9OxPwxC7B9u-rxHWoEwU9bH9Deh_1C_nSCdC');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzrV8rAfL86_O9OxPwxC7B9u-rxHWoEwU9bH9Deh_1C_nSCdC');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .img-border {
-  border-radius: 2%;
-border: 1px solid black;
+	border-radius: 2%;
+	border: 1px solid black;
 }
 
 .calendar-bg {
-  background-color: gold;
+	background-color: gold;
 }
 
 .organize-title {
-  color: gold;
-
+	color: gold;
 }
 
 .gold-bg {
-
-  background-color: gold;
-  padding: 75px 0;
-
-
+	background-color: gold;
+	padding: 75px 0;
 }
 
 .img-section {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 hr {
-  background-color: gold;
-  padding: 0;
-  margin: 0;
+	background-color: gold;
+	padding: 0;
+	margin: 0;
 }
 
 .exercise-img {
-  border: solid black;
-  height: 25vh;
-  width: 25vw;
+	border: solid black;
+	height: 25vh;
+	width: 25vw;
 }
 
 
 
 
-@media (max-width: 768px){
 
 
-  .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-  }
-  
-  .App-header {
-    /* background-color: #282c34; */
-    min-height: 100vh;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-  
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .upperBody {
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid black;
-    text-align: center;
-  }
-  
-  .lowerBody {
-    height: auto;
-    border-radius: 15px;
-    border: 2px solid black;
-  
-    text-align: center;
-  }
-  
-  .float-right {
-    float: right;
-    width: 35%;
-    padding-right: 150px;
-    background-color: transparent;
-  }
-  
-  .float-left {
-    float: left;
-    width: 35%;
-    padding-left: 150px;
-    background-color: transparent;
-    
-  }
-  
-  .exerciseDetails {
-    margin: 0 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .detailsTitle {
-    text-align: center;
-  
-  }
-  
-  .detailsBorder {
-    border: 2px solid black;
-    border-radius: 15px;
-    width: auto;
-    height: auto;
-    
-  }
-  
-  .button {
-    font-size: 20px;
-    background-color: gold;
-    color: black;
-    width: 160px;
-    height: 50px;
-    border-radius: 15px;
-    border: 1px solid white;
-    font-weight: bold;
-  }
-  
-  .marginLeftAndRight {
-    margin: 0px 50px;
-  }
-  
-  .emojiButton {
-    font-size: 4em;
-    text-decoration: none;
-    border: none;
-  }
-  
-  .navbar {
-    background-color: gold;
-  }
-  
-  .topPadding {
-    padding-top: 100px;
-  }
-  
-  
-  
-  .flex-end {
-    display: flex;
-    align-content: flex-end;
-  }
-  
-  
-  .exercisePage {
-    background-image: url('https://i.pinimg.com/originals/33/06/67/33066772d82e6448e6b874086e39cf0e.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-   
-    
-  }
-  
-  .columns{
-    background-color: white;
-    border-radius: 15px;
-    border: 2px solid black;
-    width: 35%;
-  }
-  .transparentBG {
-    background-color: transparent;
-  }
-  
-  /* .lower-body-column {
-    background-image: url('http://i.bnet.com/blogs/leg-muscle.png');
-    background-color: gold;
-    
-  }
-  
-  .lower-body-column h3 {
-    border-radius: 15px;
-    border: 1px solid black;
-    background-color:rgba(255, 217, 0, 0.5);
-   
-  } */
-  
-  
-  
-  .nav-logo {
-    width: 165px;
-    height: 60px;
-  }
-  
-  .landing-page {
-    border-radius: 15px;
-    border: 2px solid black;
-    width: 50vw;
-    background-color: gold;
-    /* display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	.App {
+		text-align: center;
+	}
+
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+		height: 40vmin;
+	}
+
+	.App-header {
+		/* background-color: #282c34; */
+		min-height: 100vh;
+		display: flex;
+		/* flex-direction: column; */
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px + 2vmin);
+	}
+
+	.App-link {
+		color: #61dafb;
+	}
+
+	@keyframes App-logo-spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.upperBody {
+		height: auto;
+		border-radius: 15px;
+		border: 2px solid black;
+		text-align: center;
+	}
+
+	.lowerBody {
+		height: auto;
+		border-radius: 15px;
+		border: 2px solid black;
+
+		text-align: center;
+	}
+
+	.float-right {
+		float: right;
+		width: 35%;
+		padding-right: 150px;
+		background-color: transparent;
+	}
+
+	.float-left {
+		float: left;
+		width: 35%;
+		padding-left: 150px;
+		background-color: transparent;
+	}
+
+	.exerciseDetails {
+		margin: 0 300px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.detailsTitle {
+		text-align: center;
+	}
+
+	.detailsBorder {
+		border: 2px solid black;
+		border-radius: 15px;
+		width: auto;
+		height: auto;
+	}
+
+	.button {
+		font-size: 20px;
+		background-color: gold;
+		color: black;
+		width: 160px;
+		height: 50px;
+		border-radius: 15px;
+		border: 1px solid white;
+		font-weight: bold;
+	}
+
+	.marginLeftAndRight {
+		margin: 0px 50px;
+	}
+
+	.emojiButton {
+		font-size: 4em;
+		text-decoration: none;
+		border: none;
+	}
+
+	.navbar {
+		background-color: gold;
+	}
+
+	.topPadding {
+		padding-top: 100px;
+	}
+
+	.flex-end {
+		display: flex;
+		align-content: flex-end;
+	}
+
+	.exercisePage {
+		background-image: url('https://i.pinimg.com/originals/33/06/67/33066772d82e6448e6b874086e39cf0e.png');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.columns {
+		background-color: white;
+		border-radius: 15px;
+		border: 2px solid black;
+		width: 35%;
+	}
+	.transparentBG {
+		background-color: transparent;
+	}
+
+	.nav-logo {
+		width: 165px;
+		height: 60px;
+	}
+
+	.landing-page {
+		border-radius: 15px;
+		border: 2px solid black;
+		width: 50vw;
+		background-color: gold;
+		/* display: flex;
     justify-content: center;
     align-items: center; */
-  }
-  
-  .bigMarginLeft{
-    margin-left: 350px
-  }
-  
-  .bigLogo {
-    text-decoration: none;
-  
-  }
-  
-  .bigLogo hover {
-    -webkit-animation: shake 1s;
-    animation: shake 1s;
-  }
-  
-  
-  .organize-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    background-color: black;
-    padding: 75px 0px;
-  
-  }
-  /* .organize-section img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
-  
-  .bg-img-test {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBYlt3AJ64kDIuedA9htY8b6qqphVfKgNuniRegcDHK9ftKNx');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  
-  
-  .image-resize {
-  height: 170px;
-  width: 170px;
-  border-radius: 2%;
-  border: 1px solid black;
-  }
-  
-  .twoExercises {
-    display: flex;
-    justify-content: space-around;
-    
-  
-  }
-  .bg {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzrV8rAfL86_O9OxPwxC7B9u-rxHWoEwU9bH9Deh_1C_nSCdC');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .img-border {
-    border-radius: 2%;
-  border: 1px solid black;
-  }
-  
-  .calendar-bg {
-    background-color: gold;
-  }
-  
-  .organize-title {
-    color: gold;
-  
-  }
-  
-  .gold-bg {
-  
-    background-color: gold;
-    padding: 75px 0;
-  
-  
-  }
-  
-  .img-section {
-    display: flex;
-    justify-content: space-around;
-  }
-  hr {
-    background-color: gold;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .exercise-img {
-    border: solid black;
-    height: 25vh;
-    width: 25vw;
-  }
+	}
 
+	.bigMarginLeft {
+		margin-left: 350px;
+	}
 
+	.bigLogo {
+		text-decoration: none;
+	}
 
+	.bigLogo hover {
+		-webkit-animation: shake 1s;
+		animation: shake 1s;
+	}
+
+	.organize-section {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: center;
+		background-color: black;
+		padding: 75px 0px;
+	}
+
+	.bg-img-test {
+		background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuBYlt3AJ64kDIuedA9htY8b6qqphVfKgNuniRegcDHK9ftKNx');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.image-resize {
+		height: 170px;
+		width: 170px;
+		border-radius: 2%;
+		border: 1px solid black;
+	}
+
+	.twoExercises {
+		display: flex;
+		justify-content: space-around;
+	}
+	.bg {
+		background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzrV8rAfL86_O9OxPwxC7B9u-rxHWoEwU9bH9Deh_1C_nSCdC');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.img-border {
+		border-radius: 2%;
+		border: 1px solid black;
+	}
+
+	.calendar-bg {
+		background-color: gold;
+	}
+
+	.organize-title {
+		color: gold;
+	}
+
+	.gold-bg {
+		background-color: gold;
+		padding: 75px 0;
+	}
+
+	.img-section {
+		display: flex;
+		justify-content: space-around;
+	}
+	hr {
+		background-color: gold;
+		padding: 0;
+		margin: 0;
+	}
+
+	.exercise-img {
+		border: solid black;
+		height: 25vh;
+		width: 25vw;
+	}
 }

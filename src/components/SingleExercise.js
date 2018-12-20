@@ -54,7 +54,7 @@ class SingleExercise extends Component {
 
 	handleSubmit = (e) => {
 		e.preventDefault() 
-		console.log(this.state)
+		console.log(this)
 		const theID = this.props.match.params.id;
 		//const theDay = this.state.
 
@@ -62,7 +62,7 @@ class SingleExercise extends Component {
 			.then((exerciseFromApi)=>{
 					console.log(exerciseFromApi, 'EXERCISE FROM API EXERCISE FROM API EXERCISE FROM API EXERCISE FROM API')
 				//this.setState({[e.target.value]: this.sate})
-				
+				this.props.history.push('/profile')
 
 			})
 

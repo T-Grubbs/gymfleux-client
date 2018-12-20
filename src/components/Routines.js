@@ -20,17 +20,20 @@ class Routines extends Component {
 	}
 
 	fetchRoutines = () => {
-		Axios.get('http://localhost:5000/api/routines', {withCredentials: true})
+		Axios.get('http://localhost:5000/api/routines', { withCredentials: true })
 			.then((responseFromApi) => {
 				this.setState({ allRoutines: responseFromApi.data.reverse() });
 			})
 			.catch((err) => {});
 	};
-	// showExercises = () => {
-	// 	const myExercises = this.state.allTheExercises.map((eachExercise) => {
-	// 		return eachExercise;
-	// 	});
-	// };
+
+	deleteRoutine = () => {
+		Axios.post('http://localhost:5000/api/routines/delete/' + this.state.allRoutines._id, {})
+			.then(() => {
+				this.props.history.push('/profile');
+			})
+			.catch(() => {});
+	};
 
 	addExercise = (theRoutine) => {
 		Axios.post('http://localhost:5000/api/routines/edit/' + theRoutine._id, {
@@ -42,18 +45,13 @@ class Routines extends Component {
 
 	showRoutines = () => {
 		return this.state.allRoutines.map((eachRoutine) => {
-            console.log('-=-=-=-=-=-=-=-=-', eachRoutine)
+			console.log('-=-=-=-=-=-=-=-=-', eachRoutine);
 			return <button onClick={() => this.addExercise(eachRoutine)}>{eachRoutine.allRoutines}</button>;
 		});
 	};
 
 	render() {
-		return (
-			<div>
-				
-				{this.showRoutines()}
-			</div>
-		);
+		return <div>{this.showRoutines()}</div>;
 	}
 }
 
