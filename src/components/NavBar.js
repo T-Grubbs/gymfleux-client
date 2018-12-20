@@ -6,6 +6,7 @@ import UserService from '../services/UserService';
 import ExerciseIndex from '../components/ExerciseIndex';
 import Signup from '../components/Signup';
 import SingleExercise from './SingleExercise';
+import UserProfile from '../components/UserProfile';
 
 class NavBar extends Component {
 	state = {

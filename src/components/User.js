@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 class UserRoutines extends Component {
 	state = {
-		sundayRoutine: [],
-		mondayRoutine: [],
-		tuesdayRoutine: [],
-		wednesdayRoutine: [],
-		thursdayRoutine: [],
-		fridayRoutine: [],
-		saturdayRoutine: [],
+		sunday: [],
+		monday: [],
+		tuesday: [],
+		wednesday: [],
+		thursday: [],
+		friday: [],
+		saturday: [],
 		profilePic: ''
 	};
 

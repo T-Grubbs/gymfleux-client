@@ -13,5 +13,8 @@ class RoutineService {
 	create = (routines) => {
 		return this.service.post('/routines', { routines }).then((response) => response.data);
 	};
+	update = (routineID, eID) => {
+		return this.service.post(`/routines/eID`, { routineID }).then((response) => response.data);
+	}; 
 }
 export default RoutineService;

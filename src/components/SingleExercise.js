@@ -68,6 +68,12 @@ class SingleExercise extends Component {
 
 	}
 
+	addExerciseToRoutine = (e) => {
+		return this.setState({
+
+		})
+	}
+
 	showExerciseDetails = () => {
 		return (
 			<div>
@@ -98,17 +104,22 @@ class SingleExercise extends Component {
 				<div>
 					<h2>the form has arrived</h2>
 					<Routines theExercieID={this.props.match.params.id} />
-					<User />
-
+					
+	<div>
+	{this.state.sunday}
+	</div>
 
 <form onSubmit={this.handleSubmit}>
-  <input type="checkbox" name="vehicle1" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
-  <input type="checkbox" name="vehicle2" value="monday" onChange={(e) => this.handleChange(e)}/>Monday
-  <input type="checkbox" name="vehicle3" value="tuesday" onChange={(e) => this.handleChange(e)}/>Tuesday
-  <input type="checkbox" name="vehicle3" value="wednesday" onChange={(e) => this.handleChange(e)}/>Wednesday
-  <input type="checkbox" name="vehicle3" value="thursday" onChange={(e) => this.handleChange(e)}/>Thursday
-  <input type="checkbox" name="vehicle3" value="friday" onChange={(e) => this.handleChange(e)}/>Friday
-  <input type="checkbox" name="vehicle3" value="saturday" onChange={(e) => this.handleChange(e)}/>Saturday
+  <input type="checkbox" name="Sunday" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
+	
+
+
+  <input type="checkbox" name="Monday" value="monday" onChange={(e) => this.handleChange(e)}/>Monday
+  <input type="checkbox" name="Tuesday" value="tuesday" onChange={(e) => this.handleChange(e)}/>Tuesday
+  <input type="checkbox" name="Wednesday" value="wednesday" onChange={(e) => this.handleChange(e)}/>Wednesday
+  <input type="checkbox" name="Thursday" value="thursday" onChange={(e) => this.handleChange(e)}/>Thursday
+  <input type="checkbox" name="Friday" value="friday" onChange={(e) => this.handleChange(e)}/>Friday
+  <input type="checkbox" name="Saturday" value="saturday" onChange={(e) => this.handleChange(e)}/>Saturday
   <input type="submit" value="Submit" />
   </form>
 

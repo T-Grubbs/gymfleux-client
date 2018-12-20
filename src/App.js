@@ -10,7 +10,6 @@ import SingleExercise from './components/SingleExercise';
 import NavBar from './components/NavBar';
 import UserProfile from './components/UserProfile';
 
-
 class App extends Component {
 	state = {
 		loggedInUser: null,
@@ -64,9 +63,9 @@ class App extends Component {
 						path="/exercise-index"
 						render={(props) => <ExerciseIndex {...props} currentUser={this.state.loggedInUser} />}
 					/>
-					
+
 					<Route path="/exercise/details/:id" component={SingleExercise} />
-					
+
 					<Route
 						path="/signup"
 						render={(props) => <Signup {...props} logTheUserIntoAppComponent={this.logInTheUser} />}
@@ -76,19 +75,14 @@ class App extends Component {
 						render={(props) => <Login {...props} logTheUserIntoAppComponent={this.logInTheUser} />}
 					/>
 					<Route
-					path="/"
-					render={(props) => <Main {...props} logTheUserIntoAppComponent={this.logInTheUser} />}
+						exact path ="/" 
+						render={(props) => <Main {...props} logTheUserIntoAppComponent={this.logInTheUser} />}
 					/>
-					<Route
-					path="/profile"
-					render={(props) => <UserProfile {...props} logTheUserIntoAppComponent={this.logInTheUser} />}
-
-					/>
+					<Route 
+						path="/profile"
+						render={(props) => <UserProfile userPassedToProfile={this.state.loggedInUser} />} />
 
 				</Switch>
-			
-				
-
 			</div>
 		);
 	}
