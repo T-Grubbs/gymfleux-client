@@ -52,7 +52,7 @@ fetchUserRoutines = () => {
 			return (
 				<div className="exercise">
 				<h3>{routine.title}</h3>
-				<img className="exercise-img" src={routine.image}/>
+				{/* <img className="" src={routine.image}/> */}
 				</div>
 			)
 
@@ -74,7 +74,8 @@ fetchUserRoutines = () => {
 			
 				return <div className="day">
 							<h3>{day}</h3>
-							 <button onClick={()=>{this.deleteRoutine(day)}}>Delete</button>
+							
+							 <button className='' onClick={()=>{this.deleteRoutine(day)}}>Clear</button>
 							 {this.showEachDay(routines[day])}
 						</div>
 

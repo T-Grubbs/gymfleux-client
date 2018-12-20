@@ -51,37 +51,43 @@ class Signup extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='signup-bg'>
+				<div className='signup-page'>
+
 				<form onSubmit={this.handleFormSubmit}>
                 
 					<label>Username:</label>
 					<input
 						type="text"
 						name="usernameInput"
+						placeholder='username'
 						value={this.state.usernameInput}
 						onChange={(e) => this.handleChange(e)}
-					/>
-
+						/>
+					<br />
 					<label>Password:</label>
 					<input
 						type="text"
 						name="passwordInput"
+						placeholder='password'
 						value={this.state.passwordInput}
 						onChange={(e) => this.handleChange(e)}
-					/>
-
+						/>
+<br />
                     <label>Height:</label>
                     <input
                         type="text"
-                        name="heightInput"
+						name="heightInput"
+						placeholder='height'
                         value={this.state.heightInput}
                         onChange={(e)=> this.handleChange(e)}
                         />
-
+					<br />
                         <label>Weight:</label>
                     <input
                         type="text"
-                        name="weightInput"
+						name="weightInput"
+						placeholder='weight'
                         value={this.state.weightInput}
                         onChange={(e)=> this.handleChange(e)}
                         />
@@ -90,18 +96,20 @@ class Signup extends Component {
                             type="textfield"
                             name="bioInput"
                             value={this.state.bioInput}
-                            placeholder="Tell us about your #gymfleux"
+                            placeholder=" #gymfleux"
                             onChange={(e)=> this.handleChange(e)}
-                        />
+							/>
 
+						<br />
 
-					<input type="submit" value="Signup" />
+					<button className='button' type="submit" value="Signup" >Signup</button>
 				</form>
 
 				<p>
 					Already have account?
 					<Link to={"/"}> Login</Link>
 				</p>
+							</div>
 			</div>
 		);
 	}

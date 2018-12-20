@@ -84,7 +84,7 @@
 	width: 160px;
 	height: 50px;
 	border-radius: 15px;
-	border: 1px solid white;
+	border: 1px solid black;
 	font-weight: bold;
 }
 
@@ -135,14 +135,22 @@
 }
 .exercise {
   border: 1px solid blue;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .day {
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border: 1px solid red;
+  /* padding: 20px;
+  width:15%; */
 }
 
+.profile-img {
+  height:50px;
+  width: 50px;
+}
 
 .nav-logo {
 	width: 165px;
@@ -242,7 +250,35 @@ hr {
 }
 
 
+.signup-page {
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  background-color: rgba(255, 217, 0, 0.623);
+}
 
+.signup-bg{
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uh59Wh0/gym-health-exercise-body-building-hand-drawing-illustration-animation-with-transparent-background_bl8kwndzg_thumbnail-full09.png');
+  background-attachment: fixed;
+  background-size: cover;
+  height:700px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.del-btn{
+  font-size: 1em;
+	background-color: gold;
+	color: black;
+	width: 70px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid black;
+	font-weight: bold;
+}
 
 
 
