@@ -16,7 +16,7 @@ componentDidMount (){
 
 fetchUserRoutines = () => {
 
-	Axios.get('http://localhost:5000/api/routines/', {withCredentials: true})
+	Axios.get('https://desolate-garden-11056.herokuapp.com/api/routines/', {withCredentials: true})
     .then((routinesfromapi)=>{
 		console.log('ooooOOOOOoooooOOOOOoOOOOoOoOOOOOooOOOOOOoO', routinesfromapi)
 		
@@ -36,7 +36,7 @@ fetchUserRoutines = () => {
 
 	deleteRoutine = (day) => {
 
-		Axios.post('http://localhost:5000/api/routines/delete', {day: day}, {withCredentials:true})
+		Axios.post('https://desolate-garden-11056.herokuapp.com/api/routines/delete', {day: day}, {withCredentials:true})
 			.then(() => {
 				//this.props.history.push('/profile');
 				window.location.reload()
@@ -52,7 +52,7 @@ fetchUserRoutines = () => {
 			return (
 				<div className="exercise">
 				<h3>{routine.title}</h3>
-				{/* <img className="" src={routine.image}/> */}
+				<img className="profile-img" src={routine.image}/>
 				</div>
 			)
 
@@ -75,7 +75,7 @@ fetchUserRoutines = () => {
 				return <div className="day">
 							<h3>{day}</h3>
 							
-							 <button className='' onClick={()=>{this.deleteRoutine(day)}}>Clear</button>
+							 <button className='del-btn' onClick={()=>{this.deleteRoutine(day)}}>Clear</button>
 							 {this.showEachDay(routines[day])}
 						</div>
 

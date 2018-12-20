@@ -3,7 +3,7 @@ import axios from 'axios';
 class UserService {
 	constructor() {
 		let service = axios.create({
-			baseURL: 'http://localhost:5000/api',
+			baseURL: 'https://desolate-garden-11056.herokuapp.com/api',
 			withCredentials: true
 		});
 

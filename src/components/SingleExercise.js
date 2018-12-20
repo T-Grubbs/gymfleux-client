@@ -25,7 +25,7 @@ class SingleExercise extends Component {
 	componentWillMount() {
 		const theID = this.props.match.params.id;
 		console.log('JFEFFHGRRGSHFEFGSHFHEFGDFSFEGSHFHEFGFD', theID);
-		Axios.get('http://localhost:5000/api/exercise/details/' + theID)
+		Axios.get('https://desolate-garden-11056.herokuapp.com/api/exercise/details/' + theID)
 			.then((exerciseFromApi) => {
 				console.log('------___---__-_-_--_-_-__-_-_-_-_-___-_-----', exerciseFromApi);
 
@@ -58,7 +58,7 @@ class SingleExercise extends Component {
 		const theID = this.props.match.params.id;
 		//const theDay = this.state.
 
-		Axios.post('http://localhost:5000/api/routines/details/' + theID, {state: this.state}, {withCredentials:true})
+		Axios.post('https://desolate-garden-11056.herokuapp.com/api/routines/details/' + theID, {state: this.state}, {withCredentials:true})
 			.then((exerciseFromApi)=>{
 					console.log(exerciseFromApi, 'EXERCISE FROM API EXERCISE FROM API EXERCISE FROM API EXERCISE FROM API')
 				//this.setState({[e.target.value]: this.sate})

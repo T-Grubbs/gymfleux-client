@@ -134,12 +134,12 @@
   height: auto;
 }
 .exercise {
-  border: 1px solid blue;
+  border: 1px solid black;
   /* padding: 15px; */
 }
 
 .day {
-  display: flex;
+ text-align: center;
   justify-content: space-around;
   align-items: center;
   border: 1px solid red;
@@ -148,8 +148,10 @@
 }
 
 .profile-img {
-  height:50px;
-  width: 50px;
+  align-content: center;
+  height: 60px;
+  width: 123px;
+  padding-left: 34px;
 }
 
 .nav-logo {

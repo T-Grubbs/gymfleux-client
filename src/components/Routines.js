@@ -20,7 +20,7 @@ class Routines extends Component {
 	}
 
 	fetchRoutines = () => {
-		Axios.get('http://localhost:5000/api/routines', { withCredentials: true })
+		Axios.get('https://desolate-garden-11056.herokuapp.com/api/routines', { withCredentials: true })
 			.then((responseFromApi) => {
 				this.setState({ allRoutines: responseFromApi.data.reverse() });
 			})
@@ -28,7 +28,7 @@ class Routines extends Component {
 	};
 
 	deleteRoutine = () => {
-		Axios.post('http://localhost:5000/api/routines/delete/' + this.state.allRoutines._id, {})
+		Axios.post('https://desolate-garden-11056.herokuapp.com/api/routines/delete/' + this.state.allRoutines._id, {})
 			.then(() => {
 				this.props.history.push('/profile');
 			})
@@ -36,7 +36,7 @@ class Routines extends Component {
 	};
 
 	addExercise = (theRoutine) => {
-		Axios.post('http://localhost:5000/api/routines/edit/' + theRoutine._id, {
+		Axios.post('https://desolate-garden-11056.herokuapp.com/api/routines/edit/' + theRoutine._id, {
 			theExerciseToAdd: this.props.theExercieID
 		})
 			.then((responseFromApi) => {})

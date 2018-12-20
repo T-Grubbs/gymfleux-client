@@ -13,7 +13,7 @@ class ExerciseIndex extends Component {
 	}
 
 	fetchExercises = () => {
-		Axios.get('http://localhost:5000/api/exercises')
+		Axios.get('https://desolate-garden-11056.herokuapp.com/api/exercises')
 			.then((responseFromApi) => {
 				this.setState({ allTheExercises: responseFromApi.data.reverse() });
 			})
