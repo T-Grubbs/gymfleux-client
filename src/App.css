@@ -29,7 +29,10 @@
 		transform: rotate(360deg);
 	}
 }
+*{
+  font-family: 'Viga', sans-serif;
 
+}
 .upperBody {
 	height: auto;
 	border-radius: 15px;
@@ -283,9 +286,20 @@ hr {
 }
 
 
+.single-exercise{
+  background-image: url('https://image.freepik.com/free-icon/dumbbell_318-54696.jpg');
+  background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
 
-
-
+login-bg{
+  background-image: url('https://cdn.pixabay.com/photo/2017/01/12/21/14/silhouette-1975689_960_720.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 
 
 

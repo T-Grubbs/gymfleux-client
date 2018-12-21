@@ -84,7 +84,7 @@ class ExerciseIndex extends Component {
 		return (
 			<div className="">
 				<div className="exercisePage">
-				<h1>Exercises</h1>
+			
 				<div className='twoExercises'>
 
 					

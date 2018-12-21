@@ -35,7 +35,7 @@ class Login extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className='login-bg'>
 				<form onSubmit={this.handleFormSubmit}>
 					<label>Username:</label>
 					<input

@@ -101,27 +101,25 @@ class SingleExercise extends Component {
 	showForm = () => {
 		if (this.state.formShowing) {
 			return (
-				<div>
-					<h2>the form has arrived</h2>
-					<Routines theExercieID={this.props.match.params.id} />
+				<div  className='details-border'>
 					
-	<div>
-	{this.state.sunday}
-	</div>
+					<Routines theExercieID={this.props.match.params.id} />
+	
 
-<form onSubmit={this.handleSubmit}>
-  <input type="checkbox" name="Sunday" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
 	
 
 
+<form onSubmit={this.handleSubmit}>
+  <input  type="checkbox" name="Sunday" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
   <input type="checkbox" name="Monday" value="monday" onChange={(e) => this.handleChange(e)}/>Monday
   <input type="checkbox" name="Tuesday" value="tuesday" onChange={(e) => this.handleChange(e)}/>Tuesday
   <input type="checkbox" name="Wednesday" value="wednesday" onChange={(e) => this.handleChange(e)}/>Wednesday
   <input type="checkbox" name="Thursday" value="thursday" onChange={(e) => this.handleChange(e)}/>Thursday
   <input type="checkbox" name="Friday" value="friday" onChange={(e) => this.handleChange(e)}/>Friday
   <input type="checkbox" name="Saturday" value="saturday" onChange={(e) => this.handleChange(e)}/>Saturday
-  <input type="submit" value="Submit" />
+  <input className="del-btn" type="submit" value="Submit" />
   </form>
+
 
 
 
@@ -144,16 +142,16 @@ class SingleExercise extends Component {
 
 	render() {
 		return (
-			<div className="exerciseDetails detailsBorder">
-				<h1 className="detailsTitle"> Exercise Details Page</h1>
+			<div className="exerciseDetails detailsBorder single-exercise">
+				
 
-				<div className="detailsBorder marginLeftAndRight">
+				<div className=" marginLeftAndRight">
 					{this.showExerciseDetails()}
 
 					<div />
 				</div>
 				<div>
-					<h1>Do you like this workout?</h1>
+					
 
 					<button className="button" type="submit" onClick={this.toggleForm}>
 						Add to Routine

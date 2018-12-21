@@ -51,7 +51,8 @@ fetchUserRoutines = () => {
 			console.log(routine)
 			return (
 				<div className="exercise">
-				<h3>{routine.title}</h3>
+				<h3>{routine.title} <br/> {routine.primary}</h3>
+				
 				<img className="profile-img" src={routine.image}/>
 				</div>
 			)
