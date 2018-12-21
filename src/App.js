@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import Main from './components/Main';
+import Main from '../components/Main';
 import { Route, Switch, Link } from 'react-router-dom';
 import UserService from './services/UserService';
-import ExerciseIndex from './components/ExerciseIndex';
-import Signup from './components/Signup';
-import SingleExercise from './components/SingleExercise';
-import NavBar from './components/NavBar';
-import UserProfile from './components/UserProfile';
-import Login from './components/Login';
+import ExerciseIndex from '../components/ExerciseIndex';
+import Signup from '../components/Signup';
+import SingleExercise from '../components/SingleExercise';
+import NavBar from '../components/NavBar';
+import UserProfile from '../components/UserProfile';
+import Login from '../components/Login';
 
 class App extends Component {
 	state = {
