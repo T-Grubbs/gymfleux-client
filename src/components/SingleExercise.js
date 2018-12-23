@@ -110,14 +110,20 @@ class SingleExercise extends Component {
 
 
 <form onSubmit={this.handleSubmit}>
-  <input  type="checkbox" name="Sunday" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
-  <input type="checkbox" name="Monday" value="monday" onChange={(e) => this.handleChange(e)}/>Monday
-  <input type="checkbox" name="Tuesday" value="tuesday" onChange={(e) => this.handleChange(e)}/>Tuesday
-  <input type="checkbox" name="Wednesday" value="wednesday" onChange={(e) => this.handleChange(e)}/>Wednesday
-  <input type="checkbox" name="Thursday" value="thursday" onChange={(e) => this.handleChange(e)}/>Thursday
-  <input type="checkbox" name="Friday" value="friday" onChange={(e) => this.handleChange(e)}/>Friday
-  <input type="checkbox" name="Saturday" value="saturday" onChange={(e) => this.handleChange(e)}/>Saturday
+<div >
+<br />
+<br />
+<br />
+<br />
+  <input  type="radio" name="Sunday" value="sunday" onChange={(e) => this.handleChange(e)}/>Sunday
+  <input  type="radio" name="Monday" value="monday" onChange={(e) => this.handleChange(e)}/>Monday
+  <input type="radio" name="Tuesday" value="tuesday" onChange={(e) => this.handleChange(e)}/>Tuesday
+  <input type="radio" name="Wednesday" value="wednesday" onChange={(e) => this.handleChange(e)}/>Wednesday
+  <input type="radio" name="Thursday" value="thursday" onChange={(e) => this.handleChange(e)}/>Thursday
+  <input type="radio" name="Friday" value="friday" onChange={(e) => this.handleChange(e)}/>Friday
+  <input type="radio" name="Saturday" value="saturday" className='goldLetters'  onChange={(e) => this.handleChange(e) } />Saturday
   <input className="del-btn" type="submit" value="Submit" />
+</div>
   </form>
 
 
@@ -150,7 +156,7 @@ class SingleExercise extends Component {
 
 					<div />
 				</div>
-				<div>
+				<div >
 					
 
 					<button className="button" type="submit" onClick={this.toggleForm}>

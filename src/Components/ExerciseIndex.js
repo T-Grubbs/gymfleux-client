@@ -29,7 +29,8 @@ class ExerciseIndex extends Component {
 					eachExercise.primary === 'quadriceps' ||
 					eachExercise.primary === 'hamstrings' ||
 					eachExercise.primary === 'calves' ||
-					eachExercise.primary === 'glutes'
+					eachExercise.primary === 'glutes' ||
+					eachExercise.primary === 'hip abductors'
 				) {
 					lowerBody.push(eachExercise);
 				}
